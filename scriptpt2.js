@@ -115,6 +115,7 @@ var hungry = new Order(allPlates);
 //3. toString method for objects
 Plate.prototype.toString = function(){
 	var stringPlate = "Plate Name: " + this.name + " Description: " + this.description + " Price: " + this.price + " Items: ";
+	for (i = 0; i<this.items.length; i++){
 	stringPlate+= this.items[i].name+ " ";
 	}
 	return stringPlate;	
